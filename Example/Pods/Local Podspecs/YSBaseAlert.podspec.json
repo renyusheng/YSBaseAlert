@@ -2,7 +2,7 @@
   "name": "YSBaseAlert",
   "version": "0.1.0",
   "summary": "A short description of YSBaseAlert.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "'简单的alert提示框'",
   "homepage": "https://github.com/renyusheng/YSBaseAlert.git",
   "license": {
     "type": "MIT",
@@ -23,5 +23,6 @@
     "MBProgressHUD": [
 
     ]
-  }
+  },
+  "static_framework": true
 }

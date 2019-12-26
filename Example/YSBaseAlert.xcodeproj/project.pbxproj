@@ -306,12 +306,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YSBaseAlert_Example/Pods-YSBaseAlert_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/YSBaseAlert/YSBaseAlert.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YSBaseAlert.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

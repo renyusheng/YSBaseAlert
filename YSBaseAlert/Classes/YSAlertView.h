@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MBProgressHUD.h"
+#import <MBProgressHUD/MBProgressHUD.h>
 #define ALERT [YSAlertView shareAlert]
 @interface YSAlertView : NSObject<MBProgressHUDDelegate>{
     MBProgressHUD *HUD;

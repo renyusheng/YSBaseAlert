@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "UILabel+YSLabel.h"
+#import "UIView+YSView.h"
 #import "YSAlertView.h"
 
 FOUNDATION_EXPORT double YSBaseAlertVersionNumber;
