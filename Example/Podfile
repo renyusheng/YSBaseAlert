@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'YSBaseAlert_Example' do
+  pod 'YSBaseAlert', :path => '../'
+
+  target 'YSBaseAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
