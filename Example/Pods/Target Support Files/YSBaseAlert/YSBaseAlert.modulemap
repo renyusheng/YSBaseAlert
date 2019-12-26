@@ -1,0 +1,6 @@
+framework module YSBaseAlert {
+  umbrella header "YSBaseAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

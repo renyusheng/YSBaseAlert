@@ -7,7 +7,7 @@
 //
 
 #import "YSBASEALERTViewController.h"
-
+#import "YSAlertView.h"
 @interface YSBASEALERTViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [ALERT showMessage:@"啊哈哈"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

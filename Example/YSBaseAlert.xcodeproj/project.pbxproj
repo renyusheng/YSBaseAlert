@@ -40,7 +40,7 @@
 		063E8A71AAEC1AE25966BDE9 /* Pods_YSBaseAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSBaseAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F38F26FF528B15A7B93D9E /* Pods-YSBaseAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSBaseAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YSBaseAlert_Tests/Pods-YSBaseAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3078A02AB091DCD1CF7CA4A5 /* Pods-YSBaseAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSBaseAlert_Example.release.xcconfig"; path = "Target Support Files/Pods-YSBaseAlert_Example/Pods-YSBaseAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
-		52D40841EE51B86BE9BCFE49 /* YSBaseAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YSBaseAlert.podspec; path = ../YSBaseAlert.podspec; sourceTree = "<group>"; };
+		52D40841EE51B86BE9BCFE49 /* YSBaseAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSBaseAlert.podspec; path = ../YSBaseAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* YSBaseAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSBaseAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +63,8 @@
 		66F704673ECFA788DAC59D78 /* Pods-YSBaseAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSBaseAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-YSBaseAlert_Tests/Pods-YSBaseAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F610F8DC086F5421C71EA39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		AA91084B21A3C0C2409A3FB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8F610F8DC086F5421C71EA39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AA91084B21A3C0C2409A3FB2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C7CB91BED7725425907F2B8D /* Pods-YSBaseAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSBaseAlert_Example.debug.xcconfig"; path = "Target Support Files/Pods-YSBaseAlert_Example/Pods-YSBaseAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E6D19B57FD9E47750F3F0F7F /* Pods_YSBaseAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSBaseAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				21F38F26FF528B15A7B93D9E /* Pods-YSBaseAlert_Tests.debug.xcconfig */,
 				66F704673ECFA788DAC59D78 /* Pods-YSBaseAlert_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = renyusheng;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8F7JQDCZDZ;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +260,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +305,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YSBaseAlert_Example/Pods-YSBaseAlert_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/YSBaseAlert/YSBaseAlert.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YSBaseAlert.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +499,7 @@
 			baseConfigurationReference = C7CB91BED7725425907F2B8D /* Pods-YSBaseAlert_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8F7JQDCZDZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YSBaseAlert/YSBaseAlert-Prefix.pch";
 				INFOPLIST_FILE = "YSBaseAlert/YSBaseAlert-Info.plist";
@@ -510,6 +516,7 @@
 			baseConfigurationReference = 3078A02AB091DCD1CF7CA4A5 /* Pods-YSBaseAlert_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8F7JQDCZDZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YSBaseAlert/YSBaseAlert-Prefix.pch";
 				INFOPLIST_FILE = "YSBaseAlert/YSBaseAlert-Info.plist";
